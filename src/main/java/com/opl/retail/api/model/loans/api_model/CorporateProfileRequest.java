@@ -3,7 +3,7 @@ package com.opl.retail.api.model.loans.api_model;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.capitaworld.service.loans.model.common.AuditActivityRequest;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 /**

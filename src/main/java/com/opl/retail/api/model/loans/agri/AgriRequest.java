@@ -4,9 +4,10 @@ import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 
-import com.capitaworld.service.loans.model.FinancialArrangementsDetailRequest;
-import com.capitaworld.service.loans.model.retail.RetailApplicantRequest;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.opl.retail.api.model.loans.FinancialArrangementsDetailRequest;
+import com.opl.retail.api.model.loans.retail.RetailApplicantRequest;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)

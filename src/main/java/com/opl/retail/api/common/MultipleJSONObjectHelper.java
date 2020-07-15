@@ -1,19 +1,20 @@
 package com.opl.retail.api.common;
 
-import com.fasterxml.jackson.core.JsonParser.Feature;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.opl.msme.api.utils.eligibility.EligibilityUtils;
-import org.codehaus.jackson.map.DeserializationConfig;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 import java.io.Serializable;
 import java.io.StringWriter;
 import java.util.List;
 import java.util.Map;
+
+import org.codehaus.jackson.map.DeserializationConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.fasterxml.jackson.core.JsonParser.Feature;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.opl.msme.api.utils.eligibility.EligibilityUtils;
 
 /**
  * Created by win7 on 11/16/2016.

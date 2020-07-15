@@ -2,8 +2,9 @@ package com.opl.retail.api.model.loans.agri;
 
 import java.io.Serializable;
 
-import com.capitaworld.service.loans.model.common.AuditActivityRequest;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.opl.retail.api.model.loans.common.AuditActivityRequest;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)

@@ -3,17 +3,18 @@ package com.opl.retail.api.model.loans.api_model;
 import java.io.Serializable;
 import java.util.List;
 
-import com.capitaworld.service.loans.model.AchievementDetailRequest;
-import com.capitaworld.service.loans.model.AssociatedConcernDetailRequest;
-import com.capitaworld.service.loans.model.CreditRatingOrganizationDetailRequest;
-import com.capitaworld.service.loans.model.DirectorBackgroundDetailRequest;
-import com.capitaworld.service.loans.model.ExistingProductDetailRequest;
-import com.capitaworld.service.loans.model.MonthlyTurnoverDetailRequest;
-import com.capitaworld.service.loans.model.OwnershipDetailRequest;
-import com.capitaworld.service.loans.model.PromotorBackgroundDetailRequest;
-import com.capitaworld.service.loans.model.ProposedProductDetailRequest;
-import com.capitaworld.service.loans.model.SecurityCorporateDetailRequest;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.opl.retail.api.model.loans.AchievementDetailRequest;
+import com.opl.retail.api.model.loans.AssociatedConcernDetailRequest;
+import com.opl.retail.api.model.loans.CreditRatingOrganizationDetailRequest;
+import com.opl.retail.api.model.loans.DirectorBackgroundDetailRequest;
+import com.opl.retail.api.model.loans.ExistingProductDetailRequest;
+import com.opl.retail.api.model.loans.MonthlyTurnoverDetailRequest;
+import com.opl.retail.api.model.loans.OwnershipDetailRequest;
+import com.opl.retail.api.model.loans.PromotorBackgroundDetailRequest;
+import com.opl.retail.api.model.loans.ProposedProductDetailRequest;
+import com.opl.retail.api.model.loans.SecurityCorporateDetailRequest;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ProfileReqRes implements Serializable {

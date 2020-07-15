@@ -2,8 +2,8 @@ package com.opl.retail.api.model.loans.agri;
 
 import java.io.Serializable;
 
-import com.capitaworld.service.loans.model.LoanApplicationRequest;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.opl.retail.api.model.loans.LoanApplicationRequest;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PrimaryAgriLoanDetailRequest extends LoanApplicationRequest implements Serializable {
