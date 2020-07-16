@@ -14,7 +14,6 @@ import com.fasterxml.jackson.core.JsonParser.Feature;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.opl.msme.api.utils.eligibility.EligibilityUtils;
 
 /**
  * Created by win7 on 11/16/2016.
@@ -99,7 +98,7 @@ public class MultipleJSONObjectHelper implements Serializable {
 	}*/
 
     public static String getStringfromListOfObject(List<?> list) throws IOException {
-        if (!EligibilityUtils.isListNullOrEmpty(list)) {
+        if (!CommonUtils.isListNullOrEmpty(list)) {
             final StringWriter sw = new StringWriter();
             new ObjectMapper().writeValue(sw, list);
             return sw.toString();
@@ -123,7 +122,7 @@ public class MultipleJSONObjectHelper implements Serializable {
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             return (T) mapper.readValue(response, clazz);
         } catch (Exception e) {
-            logger.error(EligibilityUtils.EXCEPTION + " convertJSONToObject :: ", e);
+            logger.error(CommonUtils.EXCEPTION + " convertJSONToObject :: ", e);
             return null;
         }
     }
