@@ -121,6 +121,19 @@ public class WorkflowUtils {
 		public static final Long DDR_APPROVED_ON_APPROVE = 6l;
 		public static final Long DDR_SEND_BACK_TO_CHECKER_ON_SEND_BACK = 7l;
 		public static final Long PENDING = 16l;
+		public static final Long SEND_FOR_APPROVAL = 18l;
+		public static final Long APPROVED = 19l;
+		public static final Long SEND_BACK = 20l;
+		public static final Long CHECKER_REVERT_TO_MAKER = 17l;
+		public static final Long PICKED_BY_MFI_MAKER = 24l;
+		public static final Long CALCULATE_MATCHES = 25l;
+		public static final Long APP_SENT_TO_SIDBI_MAKER = 26l;
+		public static final Long SAVE_APP_DETAILS = 27l;
+		public static final Long APP_SENT_TO_MFI_MAKER = 28l;
+		public static final Long APP_SENT_TO_SIDBI_CHECKER = 29l;
+		public static final Long SENT_BACK_TO_MFI_CHECKER = 30l;
+		public static final Long MFI_APP_IS_APPROVED = 31l;
+		public static final Long SENT_BACK_TO_SIDBI_MAKER = 32l;
 	}
 
 	public interface Workflow {
