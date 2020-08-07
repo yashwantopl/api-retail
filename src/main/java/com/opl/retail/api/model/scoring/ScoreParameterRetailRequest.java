@@ -124,7 +124,7 @@ public class ScoreParameterRetailRequest {
     private Double netWrothToLoanAmount;
     private Double avgEODBal;
     private Double deposite;
-    private Double eligibleLoanAmountCircular;;
+    private Double eligibleLoanAmountCircular;
     private Double exitingLoanObligation;
     private Double tenureOfTheLoan;
     private Double exShowRoomPrice;
