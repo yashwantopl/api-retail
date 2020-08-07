@@ -140,11 +140,32 @@ public class WorkflowUtils {
 		public static final Long DDR = 1l;
 		public static final Long BANK_PROCESS = 2l;
 		public static final Long FP_SEND_REQUEST_PROCESS = 3l;
+		public static final Long MASTER_DATA_APPROVAL_PROCESS = 4l;
+		public static final Long PL_PROCESS = 5l;
+		public static final Long MFI_PROCESS = 6l;
+		public static final Long NBFC_LOAN_PROCESS = 7l;
+		public static final Long NBFC_BANK_SANCTION_PROCESS = 8l;
+		public static final Long NBFC_BANK_RATIO_SETUP_PROCESS = 9l;
+		public static final Long SERVICING_FEES_PROCESS = 10l;
+		public static final Long ADD_IM_USER = 11l;
+		public static final Long ADD_DEALER_USER = 12l;
 	}
 
 	public interface Role {
 		public static final Long MAKER = 1l;
 		public static final Long CHECKER = 2l;
 		public static final Long APPROVER = 3l;
+		public static final Long ADMIN_FP = 4l;
+		public static final Long HEAD_OFFICER = 5l;
+		public static final Long BRANCH_OFFICER = 6l;
+		public static final Long DEFAULT_FS = 7l;
+		public static final Long FP_MAKER = 8l;
+		public static final Long FP_CHECKER = 9l;
+		public static final Long ADMIN_MAKER = 10l;
+		public static final Long ADMIN_CHECKER = 11l;
+		public static final Long MFI_MAKER = 17l;
+		public static final Long MFI_CHECKER = 18l;
+		public static final Long NBFC_MAKER = 310l;
+		public static final Long NBFC_CHECKER = 311l;
 	}
 }
