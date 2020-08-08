@@ -1,4 +1,8 @@
 package com.opl.retail.api.common.bodmas;
+
+import java.io.Serializable;
+import java.util.List;
+
 public class BodmasReqRes implements Serializable {
 
     private Long id;
