@@ -1,4 +1,7 @@
 package com.opl.retail.api.common.bodmas;
+
+import java.util.Date;
+
 public class BodmasAuditRequst {
 
 	Long id;
