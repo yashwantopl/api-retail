@@ -1,5 +1,6 @@
-package com.opl.retail.api.utils.fitchengine;
-public class QualitativeInputSheetTradLong {
+package com.opl.retail.api.model.fitchengine.service;
+
+public class QualitativeInputSheetServLong {
 	
 	private Long accountingQuality;
 	private Long contingentLiabilities;
@@ -26,6 +27,9 @@ public class QualitativeInputSheetTradLong {
 	private Long delayInSubmissionAudited;
 	private Long varianceInProjectedSales;
 	private Long numberOfLcBgIssuedInFavor;
+	
+	
+	
 	
 	@Override
 	public String toString() {

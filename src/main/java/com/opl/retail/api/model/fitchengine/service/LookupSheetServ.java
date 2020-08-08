@@ -1,5 +1,6 @@
-package com.opl.retail.api.utils.fitchengine;
-public class LookupSheetTrad {
+package com.opl.retail.api.model.fitchengine.service;
+
+public class LookupSheetServ {
 
 	private Double basicScoreEbitadNetSale;
 	private Double basicSlopeEbitadNetSale;

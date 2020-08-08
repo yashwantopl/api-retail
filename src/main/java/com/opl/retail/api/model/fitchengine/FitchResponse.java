@@ -1,4 +1,9 @@
-package com.opl.retail.api.utils.fitchengine;
+package com.opl.retail.api.model.fitchengine;
+
+import com.opl.retail.api.model.fitchengine.manufacturing.FitchOutputManu;
+import com.opl.retail.api.model.fitchengine.service.FitchOutputServ;
+import com.opl.retail.api.model.fitchengine.trading.FitchOutputTrad;
+
 public class FitchResponse {
 
 	
