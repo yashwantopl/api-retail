@@ -1,4 +1,5 @@
-package com.opl.retail.api.common.bodmas;
+package com.opl.retail.api.model.bodmas;
+
 public class BodmasResponse {
 
 	
