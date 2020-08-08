@@ -1,4 +1,4 @@
-package com.opl.retail.api.utils.fitchengine;
+package com.opl.retail.api.model.fitchengine.manufacturing;
 public class FinancialInputSheetManu
 {
 		private String companyName;

@@ -1,9 +1,9 @@
-package com.opl.retail.api.utils.fitchengine;
-public class FinancialInputSheetServ
+package com.opl.retail.api.model.fitchengine.trading;
+
+public class FinancialInputSheetTrad
 {
 		private String companyName;
 		
-		private String industryName;
 		private Double shareFaceValue=0.0;
 	
 		///////////////////////////
@@ -401,12 +401,6 @@ public class FinancialInputSheetServ
 		}
 		public void setCompanyName(String companyName) {
 			this.companyName = companyName;
-		}
-		public String getIndustryName() {
-			return industryName;
-		}
-		public void setIndustryName(String industryName) {
-			this.industryName = industryName;
 		}
 		public Double getShareFaceValue() {
 			return shareFaceValue;
@@ -2017,23 +2011,21 @@ public class FinancialInputSheetServ
 			this.ratioAnalysisFyFullDate = ratioAnalysisFyFullDate;
 		}
 		
-		
 		@Override
 		public String toString() {
-			return "FinancialInputSheetServ [companyName=" + companyName + ", industryName=" + industryName
-					+ ", shareFaceValue=" + shareFaceValue + ", noOfMonthFy=" + noOfMonthFy + ", noOfMonthSy="
-					+ noOfMonthSy + ", noOfMonthTy=" + noOfMonthTy + ", grossSalesFy=" + grossSalesFy
-					+ ", grossSalesSy=" + grossSalesSy + ", grossSalesTy=" + grossSalesTy + ", lessExciseDuityFy="
-					+ lessExciseDuityFy + ", lessExciseDuitySy=" + lessExciseDuitySy + ", lessExciseDuityTy="
-					+ lessExciseDuityTy + ", netSaleFy=" + netSaleFy + ", netSaleSy=" + netSaleSy + ", netSaleTy="
-					+ netSaleTy + ", increaseDecreaseStockFy=" + increaseDecreaseStockFy + ", increaseDecreaseStockSy="
-					+ increaseDecreaseStockSy + ", increaseDecreaseStockTy=" + increaseDecreaseStockTy
-					+ ", rawMaterialConsumedFy=" + rawMaterialConsumedFy + ", rawMaterialConsumedSy="
-					+ rawMaterialConsumedSy + ", rawMaterialConsumedTy=" + rawMaterialConsumedTy
-					+ ", powerAndFuelCostFy=" + powerAndFuelCostFy + ", powerAndFuelCostSy=" + powerAndFuelCostSy
-					+ ", powerAndFuelCostTy=" + powerAndFuelCostTy + ", employeeCostFy=" + employeeCostFy
-					+ ", employeeCostSy=" + employeeCostSy + ", employeeCostTy=" + employeeCostTy
-					+ ", generalAndAdminExpeFy=" + generalAndAdminExpeFy + ", generalAndAdminExpeSy="
+			return "FinancialInputSheetTrad [companyName=" + companyName + ", shareFaceValue=" + shareFaceValue
+					+ ", noOfMonthFy=" + noOfMonthFy + ", noOfMonthSy=" + noOfMonthSy + ", noOfMonthTy=" + noOfMonthTy
+					+ ", grossSalesFy=" + grossSalesFy + ", grossSalesSy=" + grossSalesSy + ", grossSalesTy="
+					+ grossSalesTy + ", lessExciseDuityFy=" + lessExciseDuityFy + ", lessExciseDuitySy="
+					+ lessExciseDuitySy + ", lessExciseDuityTy=" + lessExciseDuityTy + ", netSaleFy=" + netSaleFy
+					+ ", netSaleSy=" + netSaleSy + ", netSaleTy=" + netSaleTy + ", increaseDecreaseStockFy="
+					+ increaseDecreaseStockFy + ", increaseDecreaseStockSy=" + increaseDecreaseStockSy
+					+ ", increaseDecreaseStockTy=" + increaseDecreaseStockTy + ", rawMaterialConsumedFy="
+					+ rawMaterialConsumedFy + ", rawMaterialConsumedSy=" + rawMaterialConsumedSy
+					+ ", rawMaterialConsumedTy=" + rawMaterialConsumedTy + ", powerAndFuelCostFy=" + powerAndFuelCostFy
+					+ ", powerAndFuelCostSy=" + powerAndFuelCostSy + ", powerAndFuelCostTy=" + powerAndFuelCostTy
+					+ ", employeeCostFy=" + employeeCostFy + ", employeeCostSy=" + employeeCostSy + ", employeeCostTy="
+					+ employeeCostTy + ", generalAndAdminExpeFy=" + generalAndAdminExpeFy + ", generalAndAdminExpeSy="
 					+ generalAndAdminExpeSy + ", generalAndAdminExpeTy=" + generalAndAdminExpeTy
 					+ ", sellingAndDistriExpeFy=" + sellingAndDistriExpeFy + ", sellingAndDistriExpeSy="
 					+ sellingAndDistriExpeSy + ", sellingAndDistriExpeTy=" + sellingAndDistriExpeTy + ", miscelExpeFy="

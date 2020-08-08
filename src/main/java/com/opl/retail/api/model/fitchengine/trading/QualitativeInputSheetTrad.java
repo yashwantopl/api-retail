@@ -1,5 +1,6 @@
-package com.opl.retail.api.utils.fitchengine;
-public class QualitativeInputSheetServ {
+package com.opl.retail.api.model.fitchengine.trading;
+
+public class QualitativeInputSheetTrad {
 	
 	private Double accountingQuality;
 	private Double contingentLiabilities;
@@ -26,9 +27,6 @@ public class QualitativeInputSheetServ {
 	private Double delayInSubmissionAudited;
 	private Double varianceInProjectedSales;
 	private Double numberOfLcBgIssuedInFavor;
-	
-	
-	
 	
 	@Override
 	public String toString() {

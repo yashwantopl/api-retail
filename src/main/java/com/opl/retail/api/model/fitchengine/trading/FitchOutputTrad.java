@@ -1,4 +1,5 @@
-package com.opl.retail.api.utils.fitchengine;
+package com.opl.retail.api.model.fitchengine.trading;
+
 public class FitchOutputTrad {
 	
 	private String companyName;

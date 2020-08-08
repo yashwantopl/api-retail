@@ -1,4 +1,4 @@
-package com.opl.retail.api.utils.fitchengine;
+package com.opl.retail.api.exceptions.fitchengine;
 public class FitchEngineException extends Exception{
 
 	private static final long serialVersionUID = -3494092473797863483L;

@@ -1,5 +1,6 @@
-package com.opl.retail.api.utils.fitchengine;
-public class OutputSheetTrad {
+package com.opl.retail.api.model.fitchengine.service;
+
+public class OutputSheetServ {
 
 	//////////
 	
@@ -48,6 +49,10 @@ public class OutputSheetTrad {
 	
 	private Double conductACRiskScore;
 	private Double caRiskFactor;
+	
+	private Double industryRiskScore;
+	private Double industryRiskWeight;
+	
 	
 	//////////
 
@@ -365,6 +370,23 @@ public class OutputSheetTrad {
 	public void setCaRiskFactor(Double caRiskFactor) {
 		this.caRiskFactor = caRiskFactor;
 	}
+
+	public Double getIndustryRiskScore() {
+		return industryRiskScore;
+	}
+
+	public void setIndustryRiskScore(Double industryRiskScore) {
+		this.industryRiskScore = industryRiskScore;
+	}
+
+	public Double getIndustryRiskWeight() {
+		return industryRiskWeight;
+	}
+
+	public void setIndustryRiskWeight(Double industryRiskWeight) {
+		this.industryRiskWeight = industryRiskWeight;
+	}
+
 	public Double getCustomerQualityAndConcentrationScore() {
 		return customerQualityAndConcentrationScore;
 	}
@@ -765,10 +787,9 @@ public class OutputSheetTrad {
 		this.keyObservationsNine = keyObservationsNine;
 	}
 
-	
 	@Override
 	public String toString() {
-		return "OutputSheetTrad [ebitadNetSaleScore=" + ebitadNetSaleScore + ", ebitadNetSaleWeight="
+		return "OutputSheetServ [ebitadNetSaleScore=" + ebitadNetSaleScore + ", ebitadNetSaleWeight="
 				+ ebitadNetSaleWeight + ", interestCoverageScore=" + interestCoverageScore + ", interestCoverageWeight="
 				+ interestCoverageWeight + ", roceScore=" + roceScore + ", roceWeight=" + roceWeight
 				+ ", salesGrowthScore=" + salesGrowthScore + ", salesGrowthWeight=" + salesGrowthWeight
@@ -786,7 +807,8 @@ public class OutputSheetTrad {
 				+ delayInSubmissionAuditedBSAndPL + ", varianceInProjectedSalesVersusActualSales="
 				+ varianceInProjectedSalesVersusActualSales + ", lcBgIssuedInFavorBorrowerInvoked="
 				+ lcBgIssuedInFavorBorrowerInvoked + ", conductACRiskScore=" + conductACRiskScore + ", caRiskFactor="
-				+ caRiskFactor + ", customerQualityAndConcentrationScore=" + customerQualityAndConcentrationScore
+				+ caRiskFactor + ", industryRiskScore=" + industryRiskScore + ", industryRiskWeight="
+				+ industryRiskWeight + ", customerQualityAndConcentrationScore=" + customerQualityAndConcentrationScore
 				+ ", customerQualityAndConcentrationWeight=" + customerQualityAndConcentrationWeight
 				+ ", supplierQualityAndConcentrationScore=" + supplierQualityAndConcentrationScore
 				+ ", supplierQualityAndConcentrationWeight=" + supplierQualityAndConcentrationWeight

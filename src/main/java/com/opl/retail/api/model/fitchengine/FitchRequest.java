@@ -1,4 +1,12 @@
-package com.opl.retail.api.utils.fitchengine;
+package com.opl.retail.api.model.fitchengine;
+
+import com.opl.retail.api.model.fitchengine.manufacturing.FinancialInputSheetManu;
+import com.opl.retail.api.model.fitchengine.manufacturing.QualitativeInputSheetManuLong;
+import com.opl.retail.api.model.fitchengine.service.FinancialInputSheetServ;
+import com.opl.retail.api.model.fitchengine.service.QualitativeInputSheetServLong;
+import com.opl.retail.api.model.fitchengine.trading.FinancialInputSheetTrad;
+import com.opl.retail.api.model.fitchengine.trading.QualitativeInputSheetTradLong;
+
 public class FitchRequest {
 
 	private FinancialInputSheetManu financialInputSheetManu;
