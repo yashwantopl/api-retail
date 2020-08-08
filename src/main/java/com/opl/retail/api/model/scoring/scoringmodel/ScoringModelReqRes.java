@@ -2,8 +2,9 @@ package com.opl.retail.api.model.scoring.scoringmodel;
 
 import java.util.List;
 
-//import com.capitaworld.service.scoring.InactiveResponse;
+//import com.opl.service.scoring.InactiveResponse;
 import com.opl.retail.api.model.scoring.GenericCheckerReqRes;
+import com.opl.retail.api.service.scoring.*;
 
 
 public class ScoringModelReqRes {
@@ -285,7 +286,7 @@ public class ScoringModelReqRes {
 	
 	private List<GenericCheckerReqRes> workflowRemove;
 	
-//	private InactiveResponse  inactiveResponse;
+	private InactiveResponse  inactiveResponse;
 	
 	
 	
@@ -2035,13 +2036,13 @@ public class ScoringModelReqRes {
 		this.workflowRemove = workflowRemove;
 	}
 
-//	public InactiveResponse getInactiveResponse() {
-//		return inactiveResponse;
-//	}
-//
-//	public void setInactiveResponse(InactiveResponse inactiveResponse) {
-//		this.inactiveResponse = inactiveResponse;
-//	}
+	public InactiveResponse getInactiveResponse() {
+		return inactiveResponse;
+	}
+
+	public void setInactiveResponse(InactiveResponse inactiveResponse) {
+		this.inactiveResponse = inactiveResponse;
+	}
 
 	public Integer getSubScoringType() {
 		return subScoringType;
