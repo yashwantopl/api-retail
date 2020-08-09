@@ -1,14 +1,12 @@
 package com.opl.retail.api.model.loans;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
-import javax.persistence.Column;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 /**
@@ -16,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  * 
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ProductMasterRequest implements Serializable {
+public class ProductMasterRequestNewStructure implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
@@ -130,14 +128,52 @@ public class ProductMasterRequest implements Serializable {
 	   
     private Integer size;
     
-	public ProductMasterRequest() {
+    private Long version;
+    
+    private List<Integer> typeOfFinancials;
+
+	
+	public ProductMasterRequestNewStructure() {
 		// Do nothing because of X and Y.
 	}
 
-	public ProductMasterRequest(Long id) {
+	public ProductMasterRequestNewStructure(Long id) {
 		this.id = id;
 	}
+	
+	
 
+
+	public ProductMasterRequestNewStructure(Long id, String name, Integer productId, Date createdDate, Date modifiedDate,Long version) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.productId = productId;
+		this.createdDate = createdDate;
+		this.modifiedDate = modifiedDate;
+		this.version=version;
+	}
+	
+	
+	public ProductMasterRequestNewStructure(Long id, String name, Integer productId, Date createdDate, Date modifiedDate) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.productId = productId;
+		this.createdDate = createdDate;
+		this.modifiedDate = modifiedDate;
+	}
+
+	
+
+	public ProductMasterRequestNewStructure(Long id, String name, Integer productId, Integer wcRenewalStatus, Integer campaignCode) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.productId = productId;
+		this.wcRenewalStatus = wcRenewalStatus;
+		this.campaignCode = campaignCode;
+	}
 
 	/**
 	 * @return the jobId
@@ -527,14 +563,6 @@ public class ProductMasterRequest implements Serializable {
 		this.isEmiForEligibilityCalc = isEmiForEligibilityCalc;
 	}
 
-	public BigDecimal getIndividualBureauMaximumThreeMonthDPDs() {
-		return individualBureauMaximumThreeMonthDPDs;
-	}
-
-	public void setIndividualBureauMaximumThreeMonthDPDs(BigDecimal individualBureauMaximumThreeMonthDPDs) {
-		this.individualBureauMaximumThreeMonthDPDs = individualBureauMaximumThreeMonthDPDs;
-	}
-
 	public Integer getProductTab() {
 		return productTab;
 	}
@@ -549,6 +577,15 @@ public class ProductMasterRequest implements Serializable {
 
 	public void setModifiedDate(Date modifiedDate) {
 		this.modifiedDate = modifiedDate;
+	}
+
+
+	public BigDecimal getIndividualBureauMaximumThreeMonthDPDs() {
+		return individualBureauMaximumThreeMonthDPDs;
+	}
+
+	public void setIndividualBureauMaximumThreeMonthDPDs(BigDecimal individualBureauMaximumThreeMonthDPDs) {
+		this.individualBureauMaximumThreeMonthDPDs = individualBureauMaximumThreeMonthDPDs;
 	}
 
 	public Map<String, Object> getGetData() {
@@ -582,14 +619,21 @@ public class ProductMasterRequest implements Serializable {
 	public void setSize(Integer size) {
 		this.size = size;
 	}
-	
-	public ProductMasterRequest(Long id, String name, Integer productId, Date createdDate, Date modifiedDate) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.productId = productId;
-		this.createdDate = createdDate;
-		this.modifiedDate = modifiedDate;
+
+	public Long getVersion() {
+		return version;
+	}
+
+	public void setVersion(Long version) {
+		this.version = version;
+	}
+
+	public List<Integer> getTypeOfFinancials() {
+		return typeOfFinancials;
+	}
+
+	public void setTypeOfFinancials(List<Integer> typeOfFinancials) {
+		this.typeOfFinancials = typeOfFinancials;
 	}
 	
 }
