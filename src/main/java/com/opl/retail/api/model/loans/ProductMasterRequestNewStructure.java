@@ -132,6 +132,9 @@ public class ProductMasterRequestNewStructure implements Serializable {
     
     private List<Integer> typeOfFinancials;
 
+    private Long roleId;
+    
+    private List<DataRequest> versionList;
 	
 	public ProductMasterRequestNewStructure() {
 		// Do nothing because of X and Y.
@@ -634,6 +637,22 @@ public class ProductMasterRequestNewStructure implements Serializable {
 
 	public void setTypeOfFinancials(List<Integer> typeOfFinancials) {
 		this.typeOfFinancials = typeOfFinancials;
+	}
+
+	public Long getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(Long roleId) {
+		this.roleId = roleId;
+	}
+
+	public List<DataRequest> getVersionList() {
+		return versionList;
+	}
+
+	public void setVersionList(List<DataRequest> versionList) {
+		this.versionList = versionList;
 	}
 	
 }
