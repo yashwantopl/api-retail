@@ -134,6 +134,7 @@ public class WorkflowUtils {
 		public static final Long SENT_BACK_TO_MFI_CHECKER = 30l;
 		public static final Long MFI_APP_IS_APPROVED = 31l;
 		public static final Long SENT_BACK_TO_SIDBI_MAKER = 32l;
+		public static final Long REJECT = 52l;
 	}
 
 	public interface Workflow {
