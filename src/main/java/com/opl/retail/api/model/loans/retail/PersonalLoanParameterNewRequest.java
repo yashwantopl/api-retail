@@ -213,6 +213,15 @@ public class PersonalLoanParameterNewRequest extends ProductMasterRequestNewStru
 	private Boolean isSalAcTypeMandatory = false;
 	
 
+	// For New Structure
+	private List<ProductParameterMappingRequest> parameterIds;
+	private List<ProductParameterMappingRequest> mandatoryParameters;
+	private List<ProductParameterMappingRequest> optionalParameters;
+	private List<Long> manadatoryParameterIdList;
+	private List<Long> optioanalParameterIdList;
+	
+	
+	
 	/*
 	 * //FP NEW REQUIREMENT private Integer employmentId;
 	 * 
@@ -246,6 +255,46 @@ public class PersonalLoanParameterNewRequest extends ProductMasterRequestNewStru
 	 * 
 	 * private Boolean isTotalJobExperienceMandatory=false;
 	 */
+
+	public List<ProductParameterMappingRequest> getParameterIds() {
+		return parameterIds;
+	}
+
+	public void setParameterIds(List<ProductParameterMappingRequest> parameterIds) {
+		this.parameterIds = parameterIds;
+	}
+
+	public List<ProductParameterMappingRequest> getMandatoryParameters() {
+		return mandatoryParameters;
+	}
+
+	public void setMandatoryParameters(List<ProductParameterMappingRequest> mandatoryParameters) {
+		this.mandatoryParameters = mandatoryParameters;
+	}
+
+	public List<ProductParameterMappingRequest> getOptionalParameters() {
+		return optionalParameters;
+	}
+
+	public void setOptionalParameters(List<ProductParameterMappingRequest> optionalParameters) {
+		this.optionalParameters = optionalParameters;
+	}
+
+	public List<Long> getManadatoryParameterIdList() {
+		return manadatoryParameterIdList;
+	}
+
+	public void setManadatoryParameterIdList(List<Long> manadatoryParameterIdList) {
+		this.manadatoryParameterIdList = manadatoryParameterIdList;
+	}
+
+	public List<Long> getOptioanalParameterIdList() {
+		return optioanalParameterIdList;
+	}
+
+	public void setOptioanalParameterIdList(List<Long> optioanalParameterIdList) {
+		this.optioanalParameterIdList = optioanalParameterIdList;
+	}
 
 	public Boolean getIsAllowAmtPastDue() {
 		return isAllowAmtPastDue;
