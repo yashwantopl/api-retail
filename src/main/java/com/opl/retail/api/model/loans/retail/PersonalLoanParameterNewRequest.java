@@ -212,7 +212,10 @@ public class PersonalLoanParameterNewRequest extends ProductMasterRequestNewStru
 	
 	private Boolean isSalAcTypeMandatory = false;
 	
-
+	private Boolean setCibilScoreCreditHistoryLessThanSixMonthIdsMandatory = false;
+	
+	private Boolean setCibilScoreCreditHistoryLessThanSixMonthIdsOptional = false;
+	
 	// For New Structure
 	private List<ProductParameterMappingRequest> parameterIds;
 	private List<ProductParameterMappingRequest> mandatoryParameters;
@@ -1082,6 +1085,24 @@ public class PersonalLoanParameterNewRequest extends ProductMasterRequestNewStru
 
 	public void setIsSalAcTypeMandatory(Boolean isSalAcTypeMandatory) {
 		this.isSalAcTypeMandatory = isSalAcTypeMandatory;
+	}
+
+	public Boolean getSetCibilScoreCreditHistoryLessThanSixMonthIdsMandatory() {
+		return setCibilScoreCreditHistoryLessThanSixMonthIdsMandatory;
+	}
+
+	public void setSetCibilScoreCreditHistoryLessThanSixMonthIdsMandatory(
+			Boolean setCibilScoreCreditHistoryLessThanSixMonthIdsMandatory) {
+		this.setCibilScoreCreditHistoryLessThanSixMonthIdsMandatory = setCibilScoreCreditHistoryLessThanSixMonthIdsMandatory;
+	}
+
+	public Boolean getSetCibilScoreCreditHistoryLessThanSixMonthIdsOptional() {
+		return setCibilScoreCreditHistoryLessThanSixMonthIdsOptional;
+	}
+
+	public void setSetCibilScoreCreditHistoryLessThanSixMonthIdsOptional(
+			Boolean setCibilScoreCreditHistoryLessThanSixMonthIdsOptional) {
+		this.setCibilScoreCreditHistoryLessThanSixMonthIdsOptional = setCibilScoreCreditHistoryLessThanSixMonthIdsOptional;
 	}
 	
 }
